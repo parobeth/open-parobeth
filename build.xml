@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="open-parabeth" default="package">
+<target name="init">
+	<echo>Hello Chris</echo>
+	<mkdir dir="classes" /><mkdir dir="lib"></mkdir>
+</target>
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="classes"></javac></target>
+	<target name="package" depends="compile">
+		<jar destfile="lib/openparobeth.jar" basedir="classes"></jar></target></project>
