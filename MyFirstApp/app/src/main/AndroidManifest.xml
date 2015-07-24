@@ -20,7 +20,8 @@
         <activity
             android:name=".GameActivity"
             android:label="@string/title_activity_game"
-            android:parentActivityName=".MyActivity" >
+            android:parentActivityName=".MyActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.parobeth.myfirstapp.MyActivity" />
