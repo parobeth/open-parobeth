@@ -1,4 +1,4 @@
-package com.parobeth.myfirstapp;
+package com.parobeth.mchase;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

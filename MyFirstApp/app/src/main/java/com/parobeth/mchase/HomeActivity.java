@@ -1,4 +1,4 @@
-package com.parobeth.myfirstapp;
+package com.parobeth.mchase;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-public class MyActivity extends ActionBarActivity {
+public class HomeActivity extends ActionBarActivity {
 
     private TextView scoreBar;
 

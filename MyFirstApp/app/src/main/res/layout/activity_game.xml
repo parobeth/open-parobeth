@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/gameLayout"
-    tools:context="com.parobeth.myfirstapp.GameActivity">
+    tools:context="com.parobeth.mchase.GameActivity">
 
     <!-- TextView
         android:id="@+id/test"

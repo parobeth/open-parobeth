@@ -1,4 +1,4 @@
-package com.parobeth.myfirstapp;
+package com.parobeth.mchase;
 
 import java.util.Random;
 
@@ -8,18 +8,11 @@ public class DummyController implements GameController {
     private final Random random = new Random();
 
     @Override
-    public void init() {
-
-    }
-
-    @Override
     public void onPause() {
-
     }
 
     @Override
     public void onResume() {
-
     }
 
     @Override

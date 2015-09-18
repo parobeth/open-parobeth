@@ -1,4 +1,4 @@
-package com.parobeth.myfirstapp;
+package com.parobeth.mchase;
 
 import android.graphics.Typeface;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.parobeth.myfirstapp;
+package com.parobeth.mchase;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -47,18 +47,14 @@ public class GyroscopeController implements SensorEventListener, GameController 
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
+    @Override
     public void onResume() {
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
+    @Override
     public void onPause() {
         sensorManager.unregisterListener(this);
-    }
-
-    @Override
-    public void init() {
-        midY = currY;
-        midX = currX;
     }
 
     @Override
@@ -76,5 +72,10 @@ public class GyroscopeController implements SensorEventListener, GameController 
     @Override
     public String getDebug() {
         return String.format("midX: %05.2f midY: %05.2f currX: %05.2f currY %05.2f", midX, midY, currX, currY);
+    }
+
+    private void init() {
+        midY = currY;
+        midX = currX;
     }
 }

@@ -1,8 +1,7 @@
-package com.parobeth.myfirstapp;
+package com.parobeth.mchase;
 
 public interface GameController {
 
-    void init();
     void onPause();
     void onResume();
     int getDeltaX();

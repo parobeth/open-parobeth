@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.parobeth.myfirstapp" >
+    package="com.parobeth.mchase" >
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity
-            android:name=".MyActivity"
+            android:name=".HomeActivity"
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +17,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GameActivity"
+            android:name="com.parobeth.mchase.GameActivity"
             android:label="@string/title_activity_game"
-            android:parentActivityName=".MyActivity"
+            android:parentActivityName=".HomeActivity"
             android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.parobeth.myfirstapp.MyActivity" />
+                android:value=".HomeActivity" />
         </activity>
 
     </application>
 
-    <!-- uses-permission android:name="android.permission.WAKE_LOCK" /-->
 </manifest>
