@@ -31,4 +31,9 @@ public class DummyController implements GameController {
     public int getDeltaY() {
         return VALUES[random.nextInt(VALUES.length)];
     }
+
+    @Override
+    public String getDebug() {
+        return "It's all a bit random";
+    }
 }

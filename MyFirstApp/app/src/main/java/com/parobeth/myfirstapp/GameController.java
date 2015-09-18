@@ -7,4 +7,6 @@ public interface GameController {
     void onResume();
     int getDeltaX();
     int getDeltaY();
+
+    String getDebug();
 }

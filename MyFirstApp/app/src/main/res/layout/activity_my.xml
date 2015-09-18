@@ -4,12 +4,30 @@
     android:orientation="vertical"
 >
     <TextView
-        android:id="@+id/top"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:text="TOP"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:text="M-CHASE"
     />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Possibly the simplest game in the world\n(c) 1987 - 2015 Paul Etherington\nAlso available for the ZX81, ZX Spectrum, Vic 20 and Atari ST"
+        />
+
+    <TextView
+        android:id="@+id/lastScore"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        />
 
     <Button
         android:layout_width="match_parent"

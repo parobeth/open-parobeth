@@ -5,13 +5,13 @@
     android:id="@+id/gameLayout"
     tools:context="com.parobeth.myfirstapp.GameActivity">
 
-    <TextView
+    <!-- TextView
         android:id="@+id/test"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:text="TOP"
-        />
+        /-->
 
 
 </LinearLayout>

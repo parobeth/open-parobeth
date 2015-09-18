@@ -6,4 +6,5 @@ package com.parobeth.myfirstapp;
 public class GlobalContext {
 
     public static volatile GameController GAME_CONTROLLER;
+    public static volatile int LAST_SCORE = -1;
 }

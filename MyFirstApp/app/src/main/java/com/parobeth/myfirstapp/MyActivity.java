@@ -13,24 +13,23 @@ import android.widget.TextView;
 
 public class MyActivity extends ActionBarActivity {
 
+    private TextView scoreBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        TextView mainScreen = (TextView) findViewById(R.id.top);
-        mainScreen.setTextSize(40);
-
         SensorManager sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         GyroscopeController gyroscopeController = GyroscopeController.createGyroscopeControllerIfAvailable(sensorManager);
 
         if (gyroscopeController == null) {
-            mainScreen.setText("No sensor");
             GlobalContext.GAME_CONTROLLER = new DummyController();
         } else {
-            mainScreen.setText("Yes sensor");
             GlobalContext.GAME_CONTROLLER = gyroscopeController;
         }
+
+        scoreBar = (TextView) findViewById(R.id.lastScore);
     }
 
     @Override
@@ -53,6 +52,15 @@ public class MyActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if (GlobalContext.LAST_SCORE != -1) {
+            scoreBar.setText("Last Score: " + GlobalContext.LAST_SCORE);
+        }
     }
 
     public void start(View view) {
